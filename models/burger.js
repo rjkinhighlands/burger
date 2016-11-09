@@ -7,13 +7,7 @@ var burger = {
 		});
 	},
 
-//  getMenu: function(cb){
-//    orm.selectAll('menu', function(res){
-//     cb(res);
-//    });
-// },
-
-	insert: function(cb){
+	insert: function(val, cb){
 		orm.insert('burgers', 'burger_name', val, function(res){
 			cb(res);
 		});
@@ -26,10 +20,10 @@ var burger = {
 	},
 
 	delete: function(conditionVal, cb){
-		orm.insert('burgers', 'id', conditionVal, function(res){
+		orm.delete('burgers', 'id', conditionVal, function(res){
 			cb(res);
 		});
 	}
-},
+};
 
 module.exports = burger;

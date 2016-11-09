@@ -1,6 +1,6 @@
 var express = require('express');
 var router = express.Router();
-var burger = require('..models/burger.js');
+var burger = require('../models/burger.js');
 
 router.get('/', function(req, res){
 	var info = {
@@ -16,23 +16,10 @@ burger.selectAll(function(data){
 	}
 });
 
-// MENU DATA //
-
-burger.getMenu(function(data){
-	for(var i=0; i<data.length; i++){
-		info.itm.push(data[i]);
-	}
-});
-
 // HANDLEBARS INDEX //
 
-res.render('index', info);
-
-//router.get('/menu', function(req, res){
-	//burger.getMenu(function(data){
-		//res.render('restaurantMenu', { itm: data });
-	//});
-//});
+	res.render('index', info);
+});
 
 router.post('/create', function(req, res){
 	burger.insert([req.body.burgerInput], function(){

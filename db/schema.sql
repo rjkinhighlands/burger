@@ -1,6 +1,6 @@
-CREATE DATABASE burgers_db;
+CREATE DATABASE wimpyburgers_db;
 
-USE burgers_db;
+USE wimpyburgers_db;
 
 CREATE TABLE burgers(
 id INT AUTO_INCREMENT NOT NULL,

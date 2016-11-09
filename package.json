@@ -17,5 +17,12 @@
   "bugs": {
     "url": "https://github.com/rjkinhighlands/burger/issues"
   },
-  "homepage": "https://github.com/rjkinhighlands/burger#readme"
+  "homepage": "https://github.com/rjkinhighlands/burger#readme",
+  "dependencies": {
+    "express-handlebars": "^3.0.0",
+    "method-override": "^2.3.6",
+    "mysql": "^2.12.0",
+    "sequelize": "^3.24.8"
+  },
+  "devDependencies": {}
 }
