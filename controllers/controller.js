@@ -8,12 +8,12 @@ router.get('/', function(req, res){
 		itm: []
 };
 
-// BURGER DATA //
+// WIMPY BURGER TABLE //
 
 burger.selectAll(function(data){
-	for(var i=0; i<data.length; i++){
-		info.brgr.push(data[i]);
-	}
+    for(var i=0;i<data.length; i++){
+      info.brgr.push(data[i]);
+  }
 });
 
 // HANDLEBARS INDEX //
